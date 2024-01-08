@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EMPLOYEE DETAILS FORM</title>
+    <link rel="stylesheet" href="{% static "css/model.css" %}">
+  </head>
+  <body>
+    <div class="" align="center">
+    <h1>EMPLOYEE DETAILS FORM:</h1>
+    <form method="POST">
+      {{form.as_p}}
+      {% csrf_token %}
+      <input type="submit" class="btn btn-primary" value="submit button"> &nbsp;
+      <input type="reset" value"resetbutton">
+     </form>
+</div>
+
+  </body>
+</html>
